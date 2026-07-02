@@ -6,11 +6,11 @@ import { motion } from "framer-motion"
 
 const SignatureDraw = ({className, ...props}: {className?: string, props?: React.ComponentProps<"svg">}) => {
   return (
-    <motion.svg width="59" height="30" viewBox="-2 -2 63 34" xmlns="http://www.w3.org/2000/svg"
-      className={`${className} h-27 w-full`}
+    <motion.svg width="59" height="30" viewBox="-2 -2 59 34" xmlns="http://www.w3.org/2000/svg"
+      className={`group ${className} h-28 w-full`}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true,amount: 0.3 }}
       {...props}>
       <motion.path
           fill="none"

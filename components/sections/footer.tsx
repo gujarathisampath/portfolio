@@ -2,9 +2,9 @@ import { MapPin } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({className}: {className?:string}) => {
   return (
-    <section className='flex flex-col items-center justify-center gap-8 w-full'>
+    <section className={`flex flex-col items-center justify-center gap-8 w-full ${className}`}>
         <div>
             <Link href={"/"}>
                 <p className='text-base text-primary'>Sampath Gujarathi</p>

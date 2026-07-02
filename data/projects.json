@@ -1,0 +1,246 @@
+[
+  {
+    "key": "1",
+    "title": "AspireFit- A gym management CRM and mobile application.",
+    "image": "/assets/AspireFit.png",
+    "readingTime": "2 M",
+    "words": 181,
+    "date": "4th July 2026",
+    "url": "aspirefit-a-gym-management-crm-and-mobile-application",
+    "blocks":[
+        {
+          "type": "heading",
+          "text": "Running a gym shouldn't mean managing spreadsheets."
+        },
+        {
+          "type": "paragraph",
+          "content":[
+            {
+              "type":"text",
+              "text": "Behind every successful fitness center are countless moving parts memberships, attendance, subscriptions, trainer schedules, payments, and staff operations. As businesses grow, these everyday tasks often become the biggest operational challenge."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type":"text",
+              "text": "AspireFit began with a simple question: How can we make gym management feel as effortless as working out?"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/assets/AspireFit.png",
+          "alt": "AspireFit"
+        },
+        {
+          "type": "heading",
+          "text": "Designing Simplicity"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type":"text",
+              "text": "Instead of solving one problem at a time, we designed a connected ecosystem for gym owners, trainers, and members. A centralized CRM streamlines business operations, while a companion mobile app keeps trainers and members connected throughout their fitness journey."            
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type":"text",
+            "text": "The experience was designed around simplicity. Complex workflows were broken into intuitive steps, dashboards surfaced the most important information, and repetitive administrative tasks were minimized. The result is a platform that helps fitness businesses operate more efficiently without adding unnecessary complexity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content":[
+            {
+              "type": "text",
+              "text": "Designing AspireFit reinforced an important lesson: great business software should empower people, not slow them down. By reducing operational friction, gym owners can focus on growing their business, trainers can dedicate more time to coaching, and members can stay focused on achieving their fitness goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content":[
+            {
+              "type":"link",
+              "text":"Email me",
+              "href":"mailto:hello@sampath.me"
+            },
+            {
+              "type":"text",
+              "text":" for a detailed walkthrough."
+            }
+          ]
+        }
+  ]
+  },
+  {
+    "key": "2",
+    "title": "DisBots- A discovery and promotion platform for Discord bots.",
+    "image": "/assets/DisBots.png",
+    "readingTime": "2 M",
+    "words": 206,
+    "date": "8th Aug 2021",
+    "url": "disBots-a-discovery-and-promotion-platform-for-discord-bots",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Finding the right Discord bot shouldn't feel like searching through endless servers."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Discord communities rely on bots for moderation, music, utility, games, and automation, yet discovering quality bots often means jumping between websites, invite links, and community recommendations. Bot developers also struggle to showcase their projects and understand how they're performing."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "DisBots started with a simple goal: create a place where bot developers can promote their work and Discord communities can discover bots they can trust."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/DisBots.png",
+        "alt": "DisBots"
+      },
+      {
+        "type": "heading",
+        "text": "Designing Discovery"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The platform was designed around exploration and visibility. Users can browse bots by category, view detailed profiles, discover trending projects, and quickly find the right bot for their server. At the same time, developers gain a dedicated space to showcase their bots, track growth, and reach a wider audience."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Every interaction focused on reducing friction from discovering a bot to inviting it into a server. Clear information hierarchy, familiar navigation, and lightweight interfaces help users spend less time searching and more time building their communities."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What I Learned"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Working on DisBots reinforced that great discovery platforms are built on clarity, not complexity. By making it easier for communities to find quality bots and for developers to reach the right audience, the platform helps strengthen the entire Discord ecosystem."
+          }
+        ]
+      }
+  ]
+  },
+  {
+    "key": "3",
+    "title": "How I built my first discord bot",
+    "image": "/assets/Enron.png",
+    "readingTime": "2 M",
+    "words": 322,
+    "date": "16th Jan 2021",
+    "url": "how-i-built-my-first-discord-bot",
+    "blocks": [
+      {
+        "type": "heading",
+        "content": [
+          {
+            "type": "text",
+            "text": "Curiosity is what got me into programming."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "When I first joined Discord in 2020, I was fascinated by bots. They could moderate communities, play music, automate tasks, and even create games. The fact that anyone could build one with code made me wonder, \"Can I build one too?\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "That curiosity led me to Python and discord.py. I spent countless hours reading documentation, experimenting with APIs, and learning through trial and error until my first bot, Enron, came to life."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/Enron.png",
+        "alt": "Enron Discord Bot"
+      },
+      {
+        "type": "heading",
+        "content": [
+          {
+            "type": "text",
+            "text": "Building Something People Used"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Enron started as a simple moderation bot but gradually evolved into a feature rich assistant with moderation tools, leveling, custom commands, utility features, and server management capabilities. Every feature pushed me to learn something new from asynchronous programming and database design to debugging, deployment, and writing cleaner code."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What began as a learning project eventually grew beyond my expectations. Enron was added to over 100 Discord servers, served more than 100,000 users, and earned the Verified Discord Bot badge a milestone that made all those late nights of learning worthwhile."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": [
+          {
+            "type": "text",
+            "text": "More Than Just a Bot"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Looking back, Enron wasn't just my first Discord bot it was the project that introduced me to software engineering. It taught me how to build products for real users, solve problems independently, and keep learning by creating. Many of the skills I use today started with a simple question \"How does this work?\""
+          }
+        ]
+      }
+    ]
+  }
+]

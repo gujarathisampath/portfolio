@@ -24,6 +24,34 @@ export const interVariable = localFont({
   variable: "--font-inter",
 });
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sampath Gujarathi",
+  description: "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
+  keywords: ["Sampath", "Gujarathi", "Portfolio", "Software Engineer", "Web Developer", "Mobile App Developer", "Full Stack Developer", "AspireFit", "DisBots", "Enron", "Next.js", "React", "Node.js", "MongoDB", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS", "Git", "GitHub", "Portfolio", "Web Design", "Web Development", "App Design", "App Development", "Software Engineering"],
+  authors: [{ name: "Sampath Gujarathi" }],
+  creator: "Sampath Gujarathi",
+  robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Sampath Gujarathi",
+    description:
+      "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
+    url: "https://sampath.me",
+    siteName: "Sampath Gujarathi",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Sampath Gujarathi",
+    description:
+      "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,7 +61,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", "font-sans", inter.variable, interVariable.variable, GeistMono.variable, "flex flex-col max-w-2xl mx-auto py-14 px-8")}
+      className={cn("antialiased", "font-sans", inter.variable, interVariable.variable, GeistMono.variable, "flex flex-col max-w-2xl mx-auto py-14 px-8 selection:bg-primary-foreground selection:text-primary")}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>

@@ -22,14 +22,14 @@ const Contact = () => {
   return (
     <section className='flex flex-col items-start justify-start w-full'>
         <div className='flex flex-col gap-2 w-full'>
-            <Link href={"mailto:gujarathisampath@gmail.com"} target='_blank'>
+            <Link href={"mailto:hello@sampath.me"} target='_blank'>
                 <div className='flex items-center justify-between w-full'>
                     <div className='flex gap-3 items-center'>
                         <Mail className='h-5 w-5 text-muted-foreground'/>
                         <p className='text-base text-muted-foreground'>Email</p>
                     </div>
                     <div className='flex gap-3 items-center'>
-                        <p className='text-base text-muted-foreground'>gujarathisampath@gmail.com</p>
+                        <p className='text-base text-muted-foreground'>hello@sampath.me</p>
                         <ArrowUpCircleIcon className='h-5 w-5 rotate-45 text-muted-foreground'/>
                     </div>
                 </div>

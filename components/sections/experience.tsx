@@ -1,32 +1,20 @@
 import React from 'react'
 import ExperienceCard from '../experienceCard'
 import { AspireDevIcon } from '@/assets/icons/icons';
+import experiences from "@/data/experience.json"
 
 interface ExperienceData {
   id: number;
   title: string;
-  location: string;
   description: string;
   startDate: string;
   endDate?: string;
   companyName: string;
-  companyIcon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  companyIcon: string;
   companyUrl: string;
 }
 
-const experienceData : ExperienceData[] = [
-    {
-      id: 1,
-      title: 'Lead Developer',
-      location: 'Hyderabad',
-      description: 'Building scalable software and turning ideas into impactful products.',
-      startDate: 'Feb 2022',
-      endDate: 'Present',
-      companyName: 'AspireDev',
-      companyIcon: AspireDevIcon,
-      companyUrl: 'https://aspiredev.in',
-    }
-]
+const experienceData : ExperienceData[] = experiences
 
 const Experience = () => {
   return (
@@ -40,7 +28,6 @@ const Experience = () => {
                 <ExperienceCard
                     key={experience.id}
                     title={experience.title}
-                    location={experience.location}
                     description={experience.description}
                     startDate={experience.startDate}
                     endDate={experience.endDate}

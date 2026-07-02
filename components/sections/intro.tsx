@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
+import Link from 'next/link'
 
 const Intro = () => {
     const [open, setOpen] = useState(false);
@@ -55,12 +56,16 @@ const Intro = () => {
             </p>
         </div>
         <div className='flex gap-2'>
-            <Button className='rounded-full font-normal'>
-                Say hi
-            </Button>
-            <Button className='rounded-full font-normal' variant={"outline"}>
-                Resume
-            </Button>
+            <Link href={"mailto:hello@sampath.me?subject=Hello%20Sampath&body=Hi%20Sampath,%0A%0AI%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect.%0A%0ABest,"} target='_blank'>
+                <Button className='rounded-full font-normal'>
+                    Say hi
+                </Button>
+            </Link>
+            <Link href={"https://docs.google.com/document/d/1mh_S5yATU7b6Sthhd0qregdN6VKK24uTqdK_QSWMa7g/edit?usp=sharing"} target='_blank'>
+                <Button className='rounded-full font-normal' variant={"outline"}>
+                    Resume
+                </Button>
+            </Link>
         </div>
     </section>
   )

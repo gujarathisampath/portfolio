@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "title": "Google Student Ambassador",
+      "description": "Building communities, inspiring innovation, and empowering future developers.",
+      "startDate": "May 2026",
+      "endDate": "Present",
+      "companyName": "Google",
+      "companyIcon": "GSAIcon",
+      "companyUrl": "https://geministudentambassador.com/"
+    },
+    {
+      "id": 2,
+      "title": "Lead Developer",
+      "description": "Building scalable software and turning ideas into impactful products.",
+      "startDate": "Feb 2022",
+      "endDate": "Present",
+      "companyName": "AspireDev",
+      "companyIcon": "AspireDevIcon",
+      "companyUrl": "https://aspiredev.in"
+    }
+]

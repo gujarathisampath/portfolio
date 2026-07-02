@@ -1,39 +1,53 @@
-import { AspireDevIcon } from '@/assets/icons/icons'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
+import { companyIcons } from "@/assets/icons/icons";
 
 interface ExperienceCardProps {
   title: string;
-  location: string;
   description: string;
   startDate: string;
   endDate?: string;
   companyName: string;
-  companyIcon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  companyIcon: string;
   companyUrl: string;
 }
 
-const ExperienceCard = ({title, location, description, startDate, endDate, companyName, companyUrl, companyIcon: CompanyIcon,}: ExperienceCardProps) => {
+const ExperienceCard = ({
+  title,
+  description,
+  startDate,
+  endDate,
+  companyName,
+  companyUrl,
+  companyIcon,
+}: ExperienceCardProps) => {
+  const Icon = companyIcons[companyIcon as keyof typeof companyIcons];
+
   return (
-    <div className="grid grid-cols-3 gap-6 items-baseline">
-        <p className="text-xs uppercase tracking-wider text-muted-foreground">
-            {startDate} - {endDate || "Present"}
+    <div className="grid gap-3 md:grid-cols-3 md:gap-6">
+      <p className="text-xs uppercase tracking-wider text-muted-foreground md:pt-1">
+        {startDate} – {endDate || "Present"}
+      </p>
+
+      <div className="md:col-span-2">
+        <h3 className="flex flex-wrap items-center gap-1 text-base font-medium text-primary">
+          <span>{title} at</span>
+
+          <Link
+            href={companyUrl}
+            className="inline-flex items-center gap-1.5 ml-1.5"
+          >
+            <Icon className="h-5 w-5 rounded-sm" />
+            <span>{companyName}</span>
+          </Link>
+        </h3>
+
+        <p className="mt-2 text-base text-muted-foreground">
+          {description}
         </p>
-
-        <div className="col-span-2">
-            <h3 className="text-base font-medium text-primary inline-flex items-center">
-            {title} at
-            <Link href={companyUrl} className='inline-flex items-center ml-1.5'>
-              <CompanyIcon className='h-5 w-5 mr-1.5 rounded-xs'/> {companyName}
-            </Link>
-            </h3>
-            <p className="mt-1 text-base text-muted-foreground">
-            {description}
-            </p>
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ExperienceCard
+export default ExperienceCard;

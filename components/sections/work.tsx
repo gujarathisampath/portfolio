@@ -1,34 +1,17 @@
 import React from 'react'
 import WorkCard from '../workCard'
 import Link from 'next/link';
+import projects from "@/data/projects.json";
 
 interface workCardProps {
   key: string;
   title:string;
   image:string;
-  duration:string;
+  readingTime:string;
+  url: string;
 }
 
-const workCardData: workCardProps[] = [
-  {
-    key: "1",
-    title: "AspireFit- A gym management CRM and mobile application.",
-    image: "/assets/AspireFit.png",
-    duration: "2 M"
-  },
-  {
-    key: "2",
-    title: "DisBots- A discovery and promotion platform for Discord bots.",
-    image: "/assets/DisBots.png",
-    duration: "2 M"
-  },
-  {
-    key:"3",
-    title:"How I built my first discord bot",
-    image:"/assets/Enron.png",
-    duration:"1 M"
-  }
-]
+const workCardData: workCardProps[] = projects
 
 const Work = () => {
   return (
@@ -44,7 +27,8 @@ const Work = () => {
                   key={item.key}
                   title={item.title}
                   image={item.image}
-                  duration={item.duration}
+                  readingTime={item.readingTime}
+                  url={item.url}
                 />
               ))
             }
