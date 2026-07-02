@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <section className='flex flex-col items-start justify-start w-full'>
         <div className='flex flex-col gap-2 w-full'>
-            <Link href={"mailto:gujarathisampath@gmail.com"}>
+            <Link href={"mailto:gujarathisampath@gmail.com"} target='_blank'>
                 <div className='flex items-center justify-between w-full'>
                     <div className='flex gap-3 items-center'>
                         <Mail className='h-5 w-5 text-muted-foreground'/>
@@ -34,7 +34,7 @@ const Contact = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={"https://www.linkedin.com/in/sampathgujarathi/"}>
+            <Link href={"https://www.linkedin.com/in/sampathgujarathi/"} target='_blank'>
                 <div className='flex items-center justify-between w-full'>
                     <div className='flex gap-3 items-center'>
                         <LinkedIcon className='h-5 w-5 text-muted-foreground'/>
@@ -46,7 +46,7 @@ const Contact = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={"https://github.com/gujarathisampath"}>
+            <Link href={"https://github.com/gujarathisampath"} target='_blank'>
                 <div className='flex items-center justify-between w-full'>
                     <div className='flex gap-3 items-center'>
                         <GithubIcon className='h-5 w-5 text-muted-foreground'/>

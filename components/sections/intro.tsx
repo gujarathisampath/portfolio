@@ -31,7 +31,7 @@ const Intro = () => {
                         </div>
                         {open && (
                             <div
-                                className="fixed left-0 top-0 z-50 pointer-events-none rounded-full border items-center bg-popover/5 backdrop-blur-sm px-2 py-1 text-xs shadow-lg transition-transform duration-75"
+                                className="fixed left-0 top-0 z-50 pointer-events-none rounded-full border items-center bg-card/10 backdrop-blur-sm px-2 py-1 text-xs shadow-lg transition-transform duration-75"
                                 style={{
                                 transform: `translate(${pos.x}px, ${pos.y}px) translate(-50%, -50%)`,
                                 }}
@@ -49,7 +49,7 @@ const Intro = () => {
             </div>
         </div>
         <div className='flex flex-col justify-start items-start gap-4'>
-            <p className='text-base text-muted-foreground'>
+            <p className="font-normal leading-6 tracking-[0.01em] text-left text-[#7E7E7E] whitespace-pre-wrap">
                 I enjoy building <span className='text-primary'>full-stack applications</span>, experimenting with 
                 <span className='text-primary'> self-hosted infrastructure</span>, and learning something new every day.
             </p>
