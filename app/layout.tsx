@@ -10,19 +10,7 @@ export const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "900"],
-});
-
-export const GeistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "900"],
-});
-
-export const interVariable = localFont({
-  src: "../assets/fonts/InterVariable.woff2",
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "900"],
 });
 
 
@@ -34,7 +22,7 @@ export const metadata: Metadata = {
   creator: "Sampath Gujarathi",
   robots: "index, follow",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.jpg",
   },
   openGraph: {
     title: "Sampath Gujarathi",
@@ -68,7 +56,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", "font-sans", inter.variable, interVariable.variable, GeistMono.variable)}
+      className={cn("antialiased", "font-sans", inter.variable)}
     >
     <body className="flex min-h-screen flex-col max-w-2xl mx-auto py-14 px-8 selection:bg-primary-foreground selection:text-primary">
         <ThemeProvider>{children}</ThemeProvider>
