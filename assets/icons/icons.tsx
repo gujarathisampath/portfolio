@@ -11,7 +11,7 @@ export function AspireDevIcon ({className, props}:{className?:string,props?:Reac
 export function GSAIcon({className, props}:{className?:string,props?:React.HTMLAttributes<SVGElement>}){
     return (
         <svg className={className} {...props} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="20" height="20" fill="currentColor"/>
+            <rect width="20" height="20" fill="#fafafa"/>
             <g clipPath="url(#clip0_2053_3)">
             <path d="M16.16 10.1455C16.16 9.69051 16.1192 9.25301 16.0433 8.83301H10V11.318H13.4533C13.3017 12.1172 12.8467 12.7938 12.1642 13.2488V14.8647H14.2467C15.46 13.7447 16.16 12.0997 16.16 10.1455Z" fill="#4285F4"/>
             <path d="M9.99982 16.4163C11.7323 16.4163 13.1848 15.8446 14.2465 14.8646L12.164 13.2488C11.5923 13.6338 10.8632 13.8671 9.99982 13.8671C8.33148 13.8671 6.91398 12.7413 6.40648 11.2246H4.27148V12.8813C5.32732 14.9754 7.49148 16.4163 9.99982 16.4163Z" fill="#34A853"/>
