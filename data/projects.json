@@ -7,80 +7,81 @@
     "words": 181,
     "date": "4th July 2026",
     "url": "aspirefit-a-gym-management-crm-and-mobile-application",
-    "blocks":[
-        {
-          "type": "heading",
-          "text": "Running a gym shouldn't mean managing spreadsheets."
-        },
-        {
-          "type": "paragraph",
-          "content":[
-            {
-              "type":"text",
-              "text": "Behind every successful fitness center are countless moving parts memberships, attendance, subscriptions, trainer schedules, payments, and staff operations. As businesses grow, these everyday tasks often become the biggest operational challenge."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type":"text",
-              "text": "AspireFit began with a simple question: How can we make gym management feel as effortless as working out?"
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/assets/AspireFit.png",
-          "alt": "AspireFit"
-        },
-        {
-          "type": "heading",
-          "text": "Designing Simplicity"
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type":"text",
-              "text": "Instead of solving one problem at a time, we designed a connected ecosystem for gym owners, trainers, and members. A centralized CRM streamlines business operations, while a companion mobile app keeps trainers and members connected throughout their fitness journey."            
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type":"text",
+    "themeColor": "#4A227F",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Running a gym shouldn't mean managing spreadsheets."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Behind every successful fitness center are countless moving parts memberships, attendance, subscriptions, trainer schedules, payments, and staff operations. As businesses grow, these everyday tasks often become the biggest operational challenge."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AspireFit began with a simple question: How can we make gym management feel as effortless as working out?"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/AspireFit.png",
+        "alt": "AspireFit"
+      },
+      {
+        "type": "heading",
+        "text": "Designing Simplicity"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Instead of solving one problem at a time, we designed a connected ecosystem for gym owners, trainers, and members. A centralized CRM streamlines business operations, while a companion mobile app keeps trainers and members connected throughout their fitness journey."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
             "text": "The experience was designed around simplicity. Complex workflows were broken into intuitive steps, dashboards surfaced the most important information, and repetitive administrative tasks were minimized. The result is a platform that helps fitness businesses operate more efficiently without adding unnecessary complexity."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content":[
-            {
-              "type": "text",
-              "text": "Designing AspireFit reinforced an important lesson: great business software should empower people, not slow them down. By reducing operational friction, gym owners can focus on growing their business, trainers can dedicate more time to coaching, and members can stay focused on achieving their fitness goals."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content":[
-            {
-              "type":"link",
-              "text":"Email me",
-              "href":"mailto:hello@sampath.me"
-            },
-            {
-              "type":"text",
-              "text":" for a detailed walkthrough."
-            }
-          ]
-        }
-  ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Designing AspireFit reinforced an important lesson: great business software should empower people, not slow them down. By reducing operational friction, gym owners can focus on growing their business, trainers can dedicate more time to coaching, and members can stay focused on achieving their fitness goals."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "link",
+            "text": "Email me",
+            "href": "mailto:hello@sampath.me"
+          },
+          {
+            "type": "text",
+            "text": " for a detailed walkthrough."
+          }
+        ]
+      }
+    ]
   },
   {
     "key": "2",
@@ -90,6 +91,7 @@
     "words": 206,
     "date": "8th Aug 2021",
     "url": "disBots-a-discovery-and-promotion-platform-for-discord-bots",
+    "themeColor": "#3A2CBC",
     "blocks": [
       {
         "type": "heading",
@@ -153,7 +155,7 @@
           }
         ]
       }
-  ]
+    ]
   },
   {
     "key": "3",
@@ -163,6 +165,7 @@
     "words": 215,
     "date": "16th Jan 2021",
     "url": "how-i-built-my-first-discord-bot",
+    "themeColor": "#7F2222",
     "blocks": [
       {
         "type": "heading",
