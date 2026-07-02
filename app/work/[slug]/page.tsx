@@ -2,7 +2,7 @@ import { ChartNoAxesGanttIcon, Clock, LucideCornerDownLeft } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import projects from '@/data/projects.json'
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import RenderBlock from '@/components/RenderBlock';
 import Footer from '@/components/sections/footer';
 
@@ -57,7 +57,20 @@ export async function generateMetadata({
         `Read about ${project.title} by Sampath Gujarathi.`,
       images: [project.image],
     },
-    
+  };
+}
+
+export async function generateViewport({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Viewport> {
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.url === slug);
+
+  return {
+    themeColor: project?.themeColor ?? "#000000",
   };
 }
 
