@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   const project = projects.find((p) => p.url === slug);
 
-   if (!project) {
+  if (!project) {
     return {
       title: "Project Not Found",
       description: "The requested project could not be found.",
@@ -47,12 +47,10 @@ export async function generateMetadata({
       images: [
         {
           url: project.image,
-          width: 608,
-          height: 395.19,
           alt: project.title,
         },
       ],
-      
+
     },
     twitter: {
       card: "summary_large_image",
@@ -78,41 +76,41 @@ export async function generateViewport({
   };
 }
 
-export async function page({params} : {params: Promise<{ slug: string }>}){
-    const { slug } = await params;
-    const project = projects.find((p) => p.url === slug);
+export async function page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = projects.find((p) => p.url === slug);
   return (
     <div className='flex flex-col items-start justify-start w-full gap-6'>
+      <div>
+        <Link href={"/"} className='inline-flex items-center text-xs font-light uppercase text-muted-foreground gap-1 hover:text-primary transition-all'>
+          <LucideCornerDownLeft className='h-3 w-3' />
+          back
+        </Link>
+      </div>
+      <div className='flex items-center justify-between w-full'>
         <div>
-          <Link href={"/"} className='inline-flex items-center text-xs font-light uppercase text-muted-foreground gap-1 hover:text-primary transition-all'>
-                <LucideCornerDownLeft className='h-3 w-3' />
-                back
-          </Link>
+          <p className='text-sm text-muted-foreground font-light uppercase'>{project?.date}</p>
         </div>
-        <div className='flex items-center justify-between w-full'>
-            <div>
-              <p className='text-sm text-muted-foreground font-light uppercase'>{project?.date}</p>
-            </div>
-            <div className='flex items-center justify-right gap-3'>
-              <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
-                  <ChartNoAxesGanttIcon className='h-4 w-4'/>
-                  {project?.words} words
-              </p>
-              <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
-                  <Clock className='h-4 w-4'/>
-                  {project?.readingTime}
-              </p>
-            </div>
+        <div className='flex items-center justify-right gap-3'>
+          <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
+            <ChartNoAxesGanttIcon className='h-4 w-4' />
+            {project?.words} words
+          </p>
+          <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
+            <Clock className='h-4 w-4' />
+            {project?.readingTime}
+          </p>
         </div>
-        <div className='space-y-5'>
-          <h1 className='text-primary text-4xl font-medium'>{project?.title}</h1>
-          {project && project.blocks && (
-            project.blocks.map((block, key)=>(
-              <RenderBlock block={block} key={key}/>
-            ))
-          )}
-        </div>
-        <Footer className="mt-9"/>
+      </div>
+      <div className='space-y-5'>
+        <h1 className='text-primary text-4xl font-medium'>{project?.title}</h1>
+        {project && project.blocks && (
+          project.blocks.map((block, key) => (
+            <RenderBlock block={block} key={key} />
+          ))
+        )}
+      </div>
+      <Footer className="mt-9" />
     </div>
   )
 }
