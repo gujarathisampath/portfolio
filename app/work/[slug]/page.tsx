@@ -74,7 +74,10 @@ export async function generateViewport({
   const project = projects.find((p) => p.url === slug);
 
   return {
-    themeColor: project?.themeColor ?? "#000000",
+    themeColor: [
+     { media: "(prefers-color-scheme: dark)", color: project?.themeColor ?? "#000000" },
+     { media: "(prefers-color-scheme: light)", color: project?.themeColor ?? "#ffffff" }
+    ]
   };
 }
 
