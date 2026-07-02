@@ -35,7 +35,7 @@ const Personal = () => {
                 </div>
             </div>
             <div>
-                <Link href={"https://spotify.com"}>
+                <Link href={"https://open.spotify.com/track/709ZIqPHyFOpx2QdjmeWAM"}>
                     <span className='text-sm text-primary'>Listen on Spotify</span>
                 </Link>
             </div>
