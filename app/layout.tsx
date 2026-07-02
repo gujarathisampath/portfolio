@@ -24,7 +24,7 @@ export const interVariable = localFont({
   variable: "--font-inter",
 });
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "Sampath Gujarathi",
@@ -51,6 +51,13 @@ export const metadata: Metadata = {
       "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
   },
 };
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#223b59" },
+    { media: "(prefers-color-scheme: light)", color: "#223b59" }
+  ]
+}
 
 export default function RootLayout({
   children,
