@@ -9,9 +9,9 @@ interface ExperienceData {
   description: string;
   startDate: string;
   endDate?: string;
-  companyName: string;
-  companyIcon: string;
-  companyUrl: string;
+  companyName?: string;
+  companyIcon?: string;
+  companyUrl?: string;
 }
 
 const experienceData : ExperienceData[] = experiences
@@ -31,9 +31,9 @@ const Experience = () => {
                     description={experience.description}
                     startDate={experience.startDate}
                     endDate={experience.endDate}
-                    companyName={experience.companyName}
-                    companyIcon={experience.companyIcon}
-                    companyUrl={experience.companyUrl}
+                    companyName={experience?.companyName || ""}
+                    companyIcon={experience?.companyIcon || ""}
+                    companyUrl={experience?.companyUrl || ""}
                 />
             ))}
         </div>

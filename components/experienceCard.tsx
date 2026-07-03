@@ -7,9 +7,9 @@ interface ExperienceCardProps {
   description: string;
   startDate: string;
   endDate?: string;
-  companyName: string;
-  companyIcon: string;
-  companyUrl: string;
+  companyName?: string;
+  companyIcon?: string;
+  companyUrl?: string;
 }
 
 const ExperienceCard = ({
@@ -30,16 +30,22 @@ const ExperienceCard = ({
       </p>
 
       <div className="md:col-span-2">
-        <h3 className="flex flex-wrap items-center gap-1 text-base font-medium text-primary">
-          <span>{title} at</span>
+        <h3 className="flex flex-wrap items-center text-base font-medium text-primary">
+          <span>{title} {
+            companyName && (
+              <span>at</span>
+            )
+          }</span>
 
-          <Link
-            href={companyUrl}
-            className="inline-flex items-center gap-1.5 ml-1.5"
-          >
-            <Icon className="h-5 w-5 rounded-sm" />
-            <span>{companyName}</span>
-          </Link>
+          {companyName && companyUrl && Icon && (
+            <Link
+              href={companyUrl}
+              className="inline-flex items-center gap-1.5 ml-1.5"
+            >
+              <Icon className="h-5 w-5 rounded-sm" />
+              <span>{companyName}</span>
+            </Link>
+          )}
         </h3>
 
         <p className="mt-2 text-base text-muted-foreground">
