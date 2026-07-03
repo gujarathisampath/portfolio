@@ -16,14 +16,48 @@ export const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Sampath Gujarathi",
-  description: "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
-  keywords: ["Sampath", "Gujarathi", "Portfolio", "Software Engineer", "Web Developer", "Mobile App Developer", "Full Stack Developer", "AspireFit", "DisBots", "Enron", "Next.js", "React", "Node.js", "MongoDB", "Tailwind CSS", "TypeScript", "JavaScript", "HTML", "CSS", "Git", "GitHub", "Portfolio", "Web Design", "Web Development", "App Design", "App Development", "Software Engineering"],
+  description:
+    "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
+  keywords: [
+    "Sampath",
+    "Gujarathi",
+    "Portfolio",
+    "Software Engineer",
+    "Web Developer",
+    "Mobile App Developer",
+    "Full Stack Developer",
+    "AspireDev",
+    "AspireFit",
+    "DisBots",
+    "Enron",
+    "Next.js",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Git",
+    "GitHub",
+    "Portfolio",
+    "Web Design",
+    "Web Development",
+    "App Design",
+    "App Development",
+    "Software Engineering",
+  ],
   authors: [{ name: "Sampath Gujarathi" }],
   creator: "Sampath Gujarathi",
   robots: "index, follow",
+
   icons: {
-    icon: "/logo.jpg",
+    icon: "/profile.jpg",
+    shortcut: "/profile.jpg",
+    apple: "/profile.jpg",
   },
+
   openGraph: {
     title: "Sampath Gujarathi",
     description:
@@ -31,15 +65,24 @@ export const metadata: Metadata = {
     url: "https://sampath.me",
     siteName: "Sampath Gujarathi",
     type: "website",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 512,
+        height: 512,
+        alt: "Sampath Gujarathi",
+      },
+    ],
   },
+
   twitter: {
     card: "summary",
     title: "Sampath Gujarathi",
     description:
       "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
+    images: ["/profile.jpg"],
   },
 };
-
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "#223b59" },

@@ -85,6 +85,80 @@
   },
   {
     "key": "2",
+    "title": "ImgNet - Free image hosting with powerful upload tools and seamless sharing.",
+    "image": "/assets/ImgNet.png",
+    "readingTime": "2 M",
+    "words": 204,
+    "date": "16th Jun 2022",
+    "url": "imgnet-free-image-hosting-with-powerful-upload-tools",
+    "themeColor": "#7F3B22",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Uploading and sharing images should be fast, effortless, and accessible from anywhere."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Whether you're sharing screenshots, project assets, or everyday photos, most image hosting services add unnecessary friction through slow uploads, cluttered interfaces, or restrictive sharing options. Creators need a platform that focuses on speed, simplicity, and reliability."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "ImgNet was built to provide a modern image hosting experience with multiple upload methods, instant sharing, and practical tools that make managing images effortless."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/ImgNet.png",
+        "alt": "ImgNet"
+      },
+      {
+        "type": "heading",
+        "text": "Built for Fast Sharing"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The platform supports drag-and-drop uploads, clipboard pasting, file selection, and direct uploads from compatible tools, allowing users to upload images in seconds. Once uploaded, every image comes with direct links, shareable URLs, and embed-ready formats, making it easy to use across websites, social media, documentation, and messaging platforms."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Beyond hosting, ImgNet includes practical management features such as image resizing, organization tools, and a clean dashboard for keeping uploaded content accessible. The interface was designed to stay lightweight while giving users everything they need without unnecessary complexity."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What I Learned"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Building ImgNet reinforced that the best tools often remove obstacles instead of adding features. By focusing on speed, intuitive workflows, and reliable sharing, the platform delivers an image hosting experience that feels effortless for both casual users and developers."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "3",
     "title": "DisBots- A discovery and promotion platform for Discord bots.",
     "image": "/assets/DisBots.png",
     "readingTime": "2 M",
@@ -158,7 +232,7 @@
     ]
   },
   {
-    "key": "3",
+    "key": "4",
     "title": "How I built my first discord bot",
     "image": "/assets/Enron.png",
     "readingTime": "2 M",
