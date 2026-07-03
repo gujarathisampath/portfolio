@@ -56,7 +56,7 @@ const Intro = () => {
             </p>
         </div>
         <div className='flex gap-2'>
-            <Link href={"mailto:hello@sampath.me?subject=Hello%20Sampath&body=Hi%20Sampath,%0A%0AI%20came%20across%20your%20portfolio%20and%20wanted%20to%20connect.%0A%0ABest,"} target='_blank'>
+            <Link href={"https://calendly.com/gujarathisampath/15min"} target='_blank'>
                 <Button className='rounded-full font-normal'>
                     Say hi
                 </Button>
