@@ -4,7 +4,10 @@
       "title": "Google Student Ambassador",
       "description": "Building communities, inspiring innovation, and empowering future developers.",
       "startDate": "May 2026",
-      "endDate": "Present"
+      "endDate": "Present",
+      "companyName": "Google",
+      "companyIcon": "GSAIcon",
+      "companyUrl": "https://geministudentambassador.com"
     },
     {
       "id": 2,
