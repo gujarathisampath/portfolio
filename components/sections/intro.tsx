@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
+import { VerifiedIcon } from 'lucide-react'
 
 const Intro = () => {
     const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ const Intro = () => {
                         )}
             </div>
             <div>
-                <h1 className='text-base text-primary'>Sampath Gujarathi</h1>
+                <h1 className='text-base text-primary flex items-center gap-1'>Sampath Gujarathi</h1>
                 <p className="text-base text-muted-foreground">Full Stack Engineer</p>
             </div>
         </div>

@@ -20,6 +20,7 @@ const WorkCard = ({ title, image, readingTime, url }: WorkCardProps) => {
           width={608}
           height={350}
           className="h-auto w-full object-cover"
+          loading="eager"
           priority
         />
 
