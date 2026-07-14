@@ -1,3 +1,5 @@
+import NRCETIconSvg from "@/public/MRCET.svg";
+import Image from "next/image";
 
 export function AspireDevIcon ({className, props}:{className?:string,props?:React.HTMLAttributes<SVGElement>}) {
     return (
@@ -28,7 +30,12 @@ export function GSAIcon({className, props}:{className?:string,props?:React.HTMLA
     )
 }
 
+export function NRCETIcon({className, props}:{className?:string,props?:React.HTMLAttributes<SVGElement>}){
+      return <Image src={NRCETIconSvg} className={className} {...props} alt="MRCET logo" width={20} height={20}/>;
+}
+
 export const companyIcons = {
   AspireDevIcon,
-  GSAIcon
+  GSAIcon,
+  NRCETIcon
 } as const

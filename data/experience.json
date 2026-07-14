@@ -11,6 +11,16 @@
     },
     {
       "id": 2,
+      "title": "Institute Innovation Ambassador",
+      "description": "Promoted innovation and entrepreneurship among students.",
+      "startDate": "Nov 2025",
+      "endDate": "Present",
+      "companyName": "Institution's Innovation Council (IIC), MRCET",
+      "companyIcon": "NRCETIcon",
+      "companyUrl": "https://mrcet.ac.in"
+    },
+    {
+      "id": 3,
       "title": "Lead Developer",
       "description": "Building scalable software and turning ideas into impactful products.",
       "startDate": "Feb 2022",
