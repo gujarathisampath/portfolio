@@ -57,7 +57,7 @@ const Intro = () => {
             </p>
         </div>
         <div className='flex gap-2'>
-            <Link href={"https://calendly.com/gujarathisampath/15min"} target='_blank'>
+            <Link href={"https://cal.com/gujarathisampath"} target='_blank'>
                 <Button className='rounded-full font-normal'>
                     Say hi
                 </Button>

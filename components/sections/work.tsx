@@ -34,7 +34,7 @@ const Work = () => {
             }
         </div>
         <div>
-          <p className='text-sm text-muted-foreground'>More projects on <Link href={"https://github.com/gujarathisampath?tab=repositories"} target='_blank' className='text-primary'>Github</Link></p>
+          <p className='text-sm text-muted-foreground'>More projects on <Link href={"https://github.com/gujarathisampath?tab=repositories"} target='_blank' className='text-primary hover:text-muted-foreground transition-all'>Github</Link></p>
         </div>
     </section>
   )
