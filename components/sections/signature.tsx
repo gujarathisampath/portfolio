@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 const SignatureDraw = ({className, ...props}: {className?: string, props?: React.ComponentProps<"svg">}) => {
   return (
     <motion.svg width="59" height="30" viewBox="-2 -2 59 34" xmlns="http://www.w3.org/2000/svg"
-      aria-label="signature'
       className={`group ${className} h-28 w-full`}
       initial="hidden"
       whileInView="visible"
