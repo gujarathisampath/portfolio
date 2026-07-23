@@ -38,7 +38,7 @@ const SignatureDraw = ({className, ...props}: {className?: string, props?: React
 const Signature = () => {
   return (
     <div className='flex items-center justify-center text-primary w-full'>
-        <Link href={"/"}>
+        <Link href={"/"} alt="signature">
             <SignatureDraw />
         </Link>
     </div>
