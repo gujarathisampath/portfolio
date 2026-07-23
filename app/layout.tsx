@@ -103,7 +103,6 @@ export default function RootLayout({
     >
     <body className="flex min-h-screen flex-col max-w-2xl mx-auto py-14 px-8 selection:bg-primary-foreground selection:text-primary">
         <ThemeProvider>{children}</ThemeProvider>
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "47cf0a60ac89472faa0c87a4171da3c4"}'></script>
       </body>
     </html>
   )
