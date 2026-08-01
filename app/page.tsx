@@ -5,7 +5,6 @@ import Intro from "@/components/sections/intro"
 import Personal from "@/components/sections/personal"
 import Signature from "@/components/sections/signature"
 import Work from "@/components/sections/work"
-import { Button } from "@/components/ui/button"
 
 export default function Page() {
   return (

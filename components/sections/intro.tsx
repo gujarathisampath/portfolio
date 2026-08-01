@@ -9,7 +9,7 @@ const Intro = () => {
     const [open, setOpen] = useState(false);
     const [pos, setPos] = useState({ x: 0, y: 0 });
   return (
-    <section className='flex flex-col items-start justify-start mt-15 gap-6'>
+    <section className='flex flex-col items-start justify-start mt-15 gap-6 max-w-2xl px-8 mx-auto pt-14'>
         <div className='flex flex-col justify-start items-start gap-4'>
             <div className="relative">
                 <Image

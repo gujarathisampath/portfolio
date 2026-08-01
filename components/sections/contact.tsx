@@ -1,6 +1,5 @@
 import { ArrowUpCircleIcon, Mail } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
 
 const LinkedIcon = ({className, ...props}: {className?: string, [key: string]: any}) => {
     return (
@@ -22,8 +21,8 @@ const Contact = () => {
   return (
     <section className='flex flex-col items-start justify-start w-full'>
         <div className='flex flex-col gap-2 w-full'>
-            <Link href={"mailto:hello@sampath.me"} target='_blank'>
-                <div className='flex items-center justify-between w-full'>
+            <Link href={"mailto:hello@sampath.me"} target='_blank' className='hover:bg-accent/30 transition-all cursor-pointer py-2'>
+                <div className='flex items-center justify-between w-full max-w-2xl px-8 mx-auto'>
                     <div className='flex gap-3 items-center'>
                         <Mail className='h-5 w-5 text-muted-foreground'/>
                         <p className='text-base text-muted-foreground'>Email</p>
@@ -34,8 +33,8 @@ const Contact = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={"https://www.linkedin.com/in/sampathgujarathi/"} target='_blank'>
-                <div className='flex items-center justify-between w-full'>
+            <Link href={"https://www.linkedin.com/in/sampathgujarathi/"} target='_blank' className='hover:bg-accent/30 transition-all cursor-pointer py-2'>
+                <div className='flex items-center justify-between w-full max-w-2xl px-8 mx-auto'>
                     <div className='flex gap-3 items-center'>
                         <LinkedIcon className='h-5 w-5 text-muted-foreground'/>
                         <p className='text-base text-muted-foreground'>LinkedIn</p>
@@ -46,8 +45,8 @@ const Contact = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={"https://github.com/gujarathisampath"} target='_blank'>
-                <div className='flex items-center justify-between w-full'>
+            <Link href={"https://github.com/gujarathisampath"} target='_blank' className='hover:bg-accent/30 transition-all cursor-pointer py-2'>
+                <div className='flex items-center justify-between w-full max-w-2xl px-8 mx-auto'>
                     <div className='flex gap-3 items-center'>
                         <GithubIcon className='h-5 w-5 text-muted-foreground'/>
                         <p className='text-base text-muted-foreground'>Github</p>

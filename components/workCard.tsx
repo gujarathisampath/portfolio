@@ -12,8 +12,8 @@ interface WorkCardProps {
 
 const WorkCard = ({ title, image, readingTime, url }: WorkCardProps) => {
   return (
-    <Link href={`/work/${url}`}>
-      <div className="flex flex-col gap-3">
+    <Link href={`/work/${url}`} className="block w-full hover:bg-accent/30 py-2 transition-all">
+      <div className="flex flex-col gap-3 max-w-2xl px-8 mx-auto">
         <Image
           src={image}
           alt={title}

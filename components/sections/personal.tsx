@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/hover-card'
 
 const Personal = () => {
   return (
-    <section className='flex flex-col items-start justify-start gap-8'>
+    <section className='flex flex-col items-start justify-start gap-8 max-w-2xl px-8 mx-auto'>
         <div className='flex flex-col gap-2'>
             <h2 className='text-xs uppercase text-muted-foreground/75 font-light tracking-wider'>When i am not working</h2>
             <p className="text-base text-muted-foreground">I love listening to music, playing games, binging 

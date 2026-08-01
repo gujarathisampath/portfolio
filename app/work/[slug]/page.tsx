@@ -1,6 +1,5 @@
 import { ChartNoAxesGanttIcon, Clock, LucideCornerDownLeft } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
 import projects from '@/data/projects.json'
 import { Metadata, Viewport } from 'next';
 import RenderBlock from '@/components/RenderBlock';
@@ -81,43 +80,43 @@ export async function generateViewport({
   };
 }
 
-export async function page({params} : {params: Promise<{ slug: string }>}){
-    const { slug } = await params;
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
     const project = projects.find((p) => p.url === slug);
   return (
-    <div className='flex flex-col items-start justify-start w-full gap-6'>
-        <div>
-          <Link href={"/"} className='inline-flex items-center text-xs font-light uppercase text-muted-foreground gap-1 hover:text-primary transition-all'>
-                <LucideCornerDownLeft className='h-3 w-3' />
-                back
-          </Link>
-        </div>
-        <div className='flex items-center justify-between w-full'>
-            <div>
-              <p className='text-sm text-muted-foreground font-light uppercase'>{project?.date}</p>
-            </div>
-            <div className='flex items-center justify-right gap-3'>
-              <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
-                  <ChartNoAxesGanttIcon className='h-4 w-4'/>
-                  {project?.words} words
-              </p>
-              <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
-                  <Clock className='h-4 w-4'/>
-                  {project?.readingTime}
-              </p>
-            </div>
-        </div>
-        <div className='space-y-5'>
-          <h1 className='text-primary text-4xl font-medium'>{project?.title}</h1>
-          {project && project.blocks && (
-            project.blocks.map((block, key)=>(
-              <RenderBlock block={block} key={key}/>
-            ))
-          )}
+    <div className='flex flex-col items-start justify-start w-full gap-6 pt-14'>
+      <div className='max-w-2xl px-8 mx-auto space-y-6'>
+          <div>
+            <Link href={"/"} className='inline-flex items-center text-xs font-light uppercase text-muted-foreground gap-1 hover:text-primary transition-all'>
+                  <LucideCornerDownLeft className='h-3 w-3' />
+                  back
+            </Link>
+          </div>
+          <div className='flex items-center justify-between w-full'>
+              <div>
+                <p className='text-sm text-muted-foreground font-light uppercase'>{project?.date}</p>
+              </div>
+              <div className='flex items-center justify-right gap-3'>
+                <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
+                    <ChartNoAxesGanttIcon className='h-4 w-4'/>
+                    {project?.words} words
+                </p>
+                <p className='inline-flex items-center text-sm text-muted-foreground font-light gap-1 lowercase'>
+                    <Clock className='h-4 w-4'/>
+                    {project?.readingTime}
+                </p>
+              </div>
+          </div>
+          <div className='space-y-5'>
+            <h1 className='text-primary text-4xl font-medium'>{project?.title}</h1>
+            {project && project.blocks && (
+              project.blocks.map((block, key)=>(
+                <RenderBlock block={block} key={key}/>
+              ))
+            )}
+          </div>
         </div>
         <Footer className="mt-9"/>
     </div>
   )
 }
-
-export default page
