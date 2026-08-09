@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <section className='flex flex-col items-start justify-start w-full'>
         <div className='flex flex-col gap-2 w-full'>
-            <Link href={"mailto:hello@sampath.me"} target='_blank' className='hover:bg-accent/30 transition-all cursor-pointer py-2'>
+            <Link href={"mailto:hello@sampath.me?subject=Portfolio%20Inquiry&body=Hi%20%5BYour%20Name%5D%2C%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch%20regarding%20a%20potential%20opportunity.%0A%0ALooking%20forward%20to%20connecting%20with%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"} target='_blank' className='hover:bg-accent/30 transition-all cursor-pointer py-2'>
                 <div className='flex items-center justify-between w-full max-w-2xl px-8 mx-auto'>
                     <div className='flex gap-3 items-center'>
                         <Mail className='h-5 w-5 text-muted-foreground'/>

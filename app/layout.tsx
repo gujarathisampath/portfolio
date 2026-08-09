@@ -99,7 +99,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", "font-sans", inter.variable)}
+      className={cn("antialiased", "font-sans", inter.variable, inter.className)}
     >
     <body className="flex min-h-screen flex-col selection:bg-primary/5 selection:text-primary">
         <ThemeProvider>{children}</ThemeProvider>
