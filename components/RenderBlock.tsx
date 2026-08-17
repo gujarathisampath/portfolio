@@ -52,6 +52,7 @@ function RenderBlock({ block }: { block: BlockType }) {
           width={608}
           height={395.19}
           className="object-cover"
+          loading="eager"
         />
       );
 

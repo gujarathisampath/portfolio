@@ -5,6 +5,10 @@ import { Metadata, Viewport } from 'next';
 import RenderBlock from '@/components/RenderBlock';
 import Footer from '@/components/sections/footer';
 
+function parseDate(dateStr: string): Date {
+  return new Date(dateStr.replace(/(\d+)(st|nd|rd|th)\b/i, '$1'));
+}
+
 export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.url,
@@ -38,11 +42,12 @@ export async function generateMetadata({
     },
     openGraph: {
       title: project.title,
-      description:
-        `Read about ${project.title} by Sampath Gujarathi.`,
+      description: `Read about ${project.title} by Sampath Gujarathi.`,
       siteName: "Sampath Gujarathi",
       type: "article",
-      url: `https://sampath.me/work/${project.url}`,
+      url,
+      publishedTime: parseDate(project.date).toISOString(),
+      authors: ["Sampath Gujarathi"],
       images: [
         {
           url: project.image,
@@ -51,13 +56,12 @@ export async function generateMetadata({
           alt: project.title,
         },
       ],
-      
     },
     twitter: {
       card: "summary_large_image",
       title: project.title,
-      description:
-        `Read about ${project.title} by Sampath Gujarathi.`,
+      description: `Read about ${project.title} by Sampath Gujarathi.`,
+      creator: "@sampathg",
       images: [project.image],
     },
   };
@@ -82,9 +86,42 @@ export async function generateViewport({
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-    const project = projects.find((p) => p.url === slug);
+  const project = projects.find((p) => p.url === slug);
+
+  const articleJsonLd = project
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: project.title,
+        image: [`https://sampath.me${project.image}`],
+        datePublished: parseDate(project.date).toISOString(),
+        dateModified: parseDate(project.date).toISOString(),
+        author: [
+          {
+            "@type": "Person",
+            name: "Sampath Gujarathi",
+            url: "https://sampath.me",
+          },
+        ],
+        publisher: {
+          "@type": "Person",
+          name: "Sampath Gujarathi",
+          url: "https://sampath.me",
+        },
+        url: `https://sampath.me/work/${project.url}`,
+        description: `Read about ${project.title} by Sampath Gujarathi.`,
+        wordCount: project.words,
+      }
+    : null;
+
   return (
     <div className='flex flex-col items-start justify-start w-full gap-6 pt-14'>
+      {articleJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
+      )}
       <div className='max-w-2xl px-8 mx-auto space-y-6'>
           <div>
             <Link href={"/"} className='inline-flex items-center text-xs font-light uppercase text-muted-foreground gap-1 hover:text-primary transition-all'>

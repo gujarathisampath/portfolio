@@ -13,13 +13,16 @@ export const inter = Inter({
   weight: ["400", "500", "600", "700", "900"],
 });
 
+const BASE_URL = "https://sampath.me";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: "Sampath Gujarathi",
   description:
     "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
   keywords: [
     "Sampath",
+    "Sampath Gujarathi",
     "Gujarathi",
     "Portfolio",
     "Software Engineer",
@@ -48,14 +51,33 @@ export const metadata: Metadata = {
     "App Development",
     "Software Engineering",
   ],
-  authors: [{ name: "Sampath Gujarathi" }],
+  authors: [{ name: "Sampath Gujarathi", url: BASE_URL }],
   creator: "Sampath Gujarathi",
-  robots: "index, follow",
+  publisher: "Sampath Gujarathi",
+
+  alternates: {
+    canonical: BASE_URL,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 
   icons: {
-    icon: "/profile.jpg",
-    shortcut: "/profile.jpg",
-    apple: "/profile.jpg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/logo.png",
   },
 
   openGraph: {
@@ -65,6 +87,7 @@ export const metadata: Metadata = {
     url: "https://sampath.me",
     siteName: "Sampath Gujarathi",
     type: "website",
+    locale: "en_US",
     images: [
       {
         url: "/profile.jpg",
@@ -82,13 +105,35 @@ export const metadata: Metadata = {
       "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
     images: ["/profile.jpg"],
   },
+  category: "technology",
 };
+
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "#223b59" },
-    { media: "(prefers-color-scheme: light)", color: "#223b59" }
-  ]
-}
+    { media: "(prefers-color-scheme: light)", color: "#223b59" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sampath Gujarathi",
+  url: BASE_URL,
+  image: `${BASE_URL}/profile.jpg`,
+  jobTitle: "Software Developer",
+  description:
+    "Sampath Gujarathi is a full-stack and mobile developer who builds production-grade web apps, self-hosted infrastructure, and open-source tools.",
+  email: "hello@sampath.me",
+  sameAs: [
+    "https://github.com/gujarathisampath",
+    "https://github.com/sampathgujarathi",
+    "https://x.com/GSampath__",
+    "https://www.instagram.com/sampathgujarathi/",
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -101,7 +146,13 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", "font-sans", inter.variable, inter.className)}
     >
-    <body className="flex min-h-screen flex-col selection:bg-primary/5 selection:text-primary">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+      </head>
+      <body className="flex min-h-screen flex-col selection:bg-primary/5 selection:text-primary">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
