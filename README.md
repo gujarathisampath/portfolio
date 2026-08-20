@@ -34,7 +34,7 @@ portfolio/
 │   ├── projects.json       # Project metadata + rich-text content blocks
 │   └── experience.json     # Work/role history
 ├── public/
-│   ├── profile.jpg         # Profile photo
+│   ├── profile.jpeg         # Profile photo
 │   ├── logo.png            # Site logo
 │   └── assets/             # Project screenshot images
 └── assets/

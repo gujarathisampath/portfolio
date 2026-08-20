@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/profile.jpg",
+        url: "/profile.jpeg",
         width: 512,
         height: 512,
         alt: "Sampath Gujarathi",
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
     title: "Sampath Gujarathi",
     description:
       "I enjoy building full-stack applications, experimenting with self-hosted infrastructure, and learning something new every day.",
-    images: ["/profile.jpg"],
+    images: ["/profile.jpeg"],
   },
   category: "technology",
 };
